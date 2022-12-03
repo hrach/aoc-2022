@@ -2,6 +2,10 @@ import java.io.File
 import java.math.BigInteger
 import java.security.MessageDigest
 
+fun check(actual: Int, expected: Int) {
+    check(actual == expected) { "Check failed. Received $actual"}
+}
+
 /**
  * Reads lines from the given input txt file.
  */
