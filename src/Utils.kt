@@ -6,6 +6,10 @@ fun check(actual: Int, expected: Int) {
     check(actual == expected) { "Check failed. Received $actual"}
 }
 
+fun check(actual: Long, expected: Long) {
+    check(actual == expected) { "Check failed. Received $actual"}
+}
+
 fun check(actual: String, expected: String) {
     check(actual == expected) { "Check failed. Received $actual"}
 }
